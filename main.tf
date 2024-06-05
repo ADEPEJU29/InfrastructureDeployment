@@ -1,5 +1,5 @@
 provider "aws" {
-  region     = "us-east-2"
+  region     = "us-east-1"
 }
 
 # custom vpc
@@ -96,7 +96,7 @@ resource "aws_instance" "foo" {
   subnet_id = aws_subnet.demo_subnet.id
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   availability_zone = "us-east-1a"
-  key_name = "Akeem-KEYPAIR"
+  key_name = "ADEPEJU"
   count = 5
 
   tags = {
